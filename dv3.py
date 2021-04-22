@@ -1,6 +1,7 @@
-class person:
-      department= input("enter the department")
-      name = input("enter a name")
-      location= input("enter your location")
-
-print('{} live in {} and works in {}'.format(person.name,person.location,person.department))
+num = int(input("Enter the number:"))
+for i in range(2, int(num / 2)):
+    if num % i == 0:
+        print("Not a Prime Number")
+        break
+else:
+    print("It is a Prime Number")

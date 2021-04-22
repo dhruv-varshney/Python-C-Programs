@@ -1,12 +1,23 @@
-class Person:
-      department= input("enter the department")
-      def set_name(self,new_name):
-          self.name = new_name
-      def set_location(self,new_location):
-          self.location = new_location
-person = Person()
-a = input("enter a name")
-b = input("enter your location")
-person.set_name(a)
-person.set_location(b)
-print('{} live in {} and works in {}'.format(person.name,person.location,person.department))
+val = int(input('enter the number: '))
+
+x=0
+
+y=0
+
+for i in range(1,val+1):
+
+     if(i%2!=0):
+
+         x= x+7
+
+     else:
+
+         y = y+6
+
+if(val%2!=0):
+
+    print(' {} term in accordance to the program is {}'.format(val,x-7))
+
+else:
+
+    print('{} term in accordance to the program is {}'.format(val,y-6))

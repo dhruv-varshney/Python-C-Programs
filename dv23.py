@@ -1,0 +1,6 @@
+k = ('a','b','c','d','e')
+k = list(k)
+print(type(k))
+print(k)
+k = tuple(k)
+print(type(k))

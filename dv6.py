@@ -1,10 +1,10 @@
-my_function = lambda a, b, c : (a/b)
-m = int(input("enter the value of a"))
-n = int(input("enter the value of b"))
-p = int(input("enter the value of c"))
-try:
-    d = my_function(m,n,p)
-    print(round (d))
+num = int(input("Enter the Number:"))
+n1, n2 = 0, 1
+print("Fibonacci Series:", n1, n2, end=",")
+for i in range(2, num):
+    n3 = n1 + n2
+    n1 = n2
+    n2 = n3
+    print(n3, end=" ")
 
-except :
-    print("invalid")
+print()

@@ -1,12 +1,6 @@
-def count_substring(string, sub_string):
-    k = string.count(sub_string)
-    return k
+a = [1,2,3,4,5]
+k  =2
+del a[0]
+for i in range(0,len(a)):
+    print(a[i])
 
-
-
-if __name__ == '__main__':
-    string = input()
-    sub_string = input()
-
-    count = count_substring(string, sub_string)
-    print(count)

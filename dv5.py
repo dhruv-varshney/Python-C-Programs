@@ -1,9 +1,19 @@
-people = ['Dr. Christopher Brooks', 'Dr. Kevyn Collins-Thompson', 'Dr. VG Vinod Vydiswaran', 'Dr. Daniel Romero']
+num = int(input("Enter a number: "))
 
-def split_title_and_name(person):
-    title = person.split()[0]
-    lastname = person.split()[-1]
-    return '{} {}'.format(title, lastname)
+# initialize sum
+sum = 0
 
-c =list(map(split_title_and_name, people))
-print(c)
+# find the sum of the cube of each digit
+temp = num
+k = str(num)
+length= len(k)
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** length
+   temp //= 10
+
+# display the result
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")

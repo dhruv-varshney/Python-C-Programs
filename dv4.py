@@ -1,11 +1,9 @@
-store1=[1,2,3,4,5]
-store2=[6,1,8,9,1]
-cheapest = map(min,store1,store2)
-highest = map(max,store1,store2)
-print(cheapest)
-print(highest)
-for item in cheapest:
-    print(item)
-print("")
-for item in highest:
-    print(item)
+n = int(input("enter a no."))
+tot = 0
+if(n==0):
+   tot =0
+while(n>0):
+   dig = n%10
+   tot =tot+dig
+   n= n//10
+print("the sum of a digits of a no. is"+str(tot))      
