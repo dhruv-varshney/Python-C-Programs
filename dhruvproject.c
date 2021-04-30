@@ -22,7 +22,7 @@ struct contact
 
 char query[20],name[20];
 
-FILE *fp, *ft;
+FILE *fp,*ft;
 
 int i,n,ch,l,found;
 
